@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 610 430" width="610" height="430">
+<defs></defs><circle cx="100" cy="82" r="53" fill="#92EDDC" opacity=".17"/><circle cx="528" cy="330" r="63" fill="#A5FFF1" opacity=".12"/>
+<path d="M145 296 C98 296 78 260 78 232 C78 191 104 167 146 162 C151 107 195 81 244 94 C276 49 341 57 371 99 C426 90 458 118 462 163 C507 166 533 191 533 235 C533 277 496 299 461 299 Z" fill="#D1FFF4" opacity=".94"/>
+<path d="M149 280 C105 280 96 249 96 231 C96 191 122 178 161 177 C173 117 218 97 250 113 C291 63 352 88 365 119 C411 103 447 135 444 181 C493 180 515 208 515 238 C515 263 493 280 463 280 Z" fill="#EDFFFA"/>
+<rect x="170" y="135" width="268" height="202" rx="20" fill="#16375D" stroke="#6CD8CF" stroke-width="3"/>
+<rect x="189" y="156" width="230" height="45" rx="10" fill="#275979"/><rect x="189" y="213" width="230" height="45" rx="10" fill="#275979"/><rect x="189" y="270" width="230" height="45" rx="10" fill="#275979"/>
+<circle cx="210" cy="179" r="7" fill="#8EF5BB"/><circle cx="210" cy="236" r="7" fill="#8EF5BB"/><circle cx="210" cy="293" r="7" fill="#8EF5BB"/>
+<rect x="227" y="174" width="75" height="9" rx="4" fill="#C0EDEB"/><rect x="227" y="231" width="92" height="9" rx="4" fill="#C0EDEB"/><rect x="227" y="288" width="69" height="9" rx="4" fill="#C0EDEB"/>
+<rect x="368" y="173" width="26" height="12" rx="5" fill="#71CFCB"/><rect x="368" y="230" width="26" height="12" rx="5" fill="#71CFCB"/><rect x="368" y="287" width="26" height="12" rx="5" fill="#71CFCB"/>
+<path d="M167 235 H85 V352 H155" stroke="#D6FFF5" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="7 10"/>
+<path d="M442 235 H529 V349 H472" stroke="#D6FFF5" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="7 10"/>
+<circle cx="111" cy="352" r="36" fill="#B9FEE6"/><circle cx="111" cy="352" r="20" fill="#21846F"/><path d="M102 352 L109 359 L121 345" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="499" cy="349" r="37" fill="#B5F3F5"/><path d="M481 349 L491 339 L499 349 L509 339 L520 351 L509 363 L498 353 L489 362 Z" fill="#1A8288"/>
+<path d="M304 337 V390" stroke="#D3FFF6" stroke-width="5" stroke-dasharray="8 10"/>
+<circle cx="304" cy="390" r="19" fill="#A4F5D9"/><circle cx="304" cy="390" r="7" fill="#147D80"/>
+<path d="M50 120 l19 -10 M480 78 l21 19" stroke="#D3FFF6" stroke-width="6" stroke-linecap="round" opacity=".75"/></svg>

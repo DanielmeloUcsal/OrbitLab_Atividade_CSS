@@ -1,0 +1,128 @@
+/* Identidade visual da demonstração. Os seis componentes usam as classes e APIs do Bootstrap. */
+:root { --ink:#17213c; --muted:#66718b; --purple:#7056ef; --purple-deep:#5238d5; --surface:#f7f8fc; }
+html {scroll-behavior:smooth;scroll-padding-top:100px}
+body {font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+a,button { -webkit-tap-highlight-color:transparent; }
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {outline:3px solid #a59aff;outline-offset:3px}
+.skip-link {position:absolute;top:-90px;left:16px;z-index:2000;background:white;color:var(--ink);padding:12px 18px;border-radius:9px}
+.skip-link:focus {top:12px}
+.announcement {background:#151b42;color:#d7dafa;font-size:.79rem;letter-spacing:.01em}
+.announcement a {color:#fff;font-weight:700;text-decoration:none}
+.announcement-dot {display:inline-block;width:7px;height:7px;background:#a69aff;border-radius:50%;margin-right:8px}
+.site-header {background:rgba(255,255,255,.96);border-bottom:1px solid #eff0f7;backdrop-filter:blur(15px)}
+.navbar-brand {font-size:1.56rem;font-weight:850;letter-spacing:-.07em;color:#1c2547}
+.brand-mark,.brand-period {color:var(--purple)}
+.navbar .nav-link {color:#555e76;font-size:.92rem;font-weight:600}
+.navbar .nav-link:hover,.navbar .nav-link.active {color:var(--purple)}
+.btn-brand {background:var(--purple);color:#fff;border:1px solid var(--purple);box-shadow:0 8px 17px rgba(98,72,211,.15)}
+.btn-brand:hover,.btn-brand:focus-visible {background:var(--purple-deep);color:#fff;border-color:var(--purple-deep)}
+.hero-carousel {border-radius:30px;overflow:hidden;box-shadow:0 20px 65px rgba(34,28,111,.12)}
+.hero-slide {min-height:475px;padding:56px 7.5% 73px;color:white;isolation:isolate;position:relative}
+.hero-slide::before {content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-105px;top:-190px;z-index:-1}
+.hero-slide::after {content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.08);border-radius:50%;left:40%;bottom:-156px;z-index:-1}
+.hero-slide--purple {background:radial-gradient(ellipse at 85% 25%,#9e7bff 0%,transparent 42%),linear-gradient(115deg,#303061 4%,#5943b6 68%,#7a5de2)}
+.hero-slide--teal {background:radial-gradient(ellipse at 90% 12%,#30cba9 0%,transparent 42%),linear-gradient(115deg,#132e55,#175b78 68%,#209388)}
+.hero-slide--coral {background:radial-gradient(ellipse at 90% 10%,#ffb496 0%,transparent 44%),linear-gradient(115deg,#4f2b5f,#9d477d 63%,#dc765f)}
+.hero-copy {position:relative;z-index:1}
+.eyebrow-light {display:inline-flex;align-items:center;gap:10px;font-size:.73rem;letter-spacing:.19em;font-weight:750;color:#e3dcff}
+.sparkle {font-size:1.1rem;color:#e3ddff}
+.hero-slide h1,.hero-slide h2 {font-weight:850;line-height:1.09;letter-spacing:-.048em;font-size:clamp(2.3rem,4.4vw,4.6rem);margin:19px 0}
+.hero-slide h1 span,.hero-slide h2 span {color:#e3dcff}
+.hero-slide p {font-size:1rem;line-height:1.8;max-width:475px;color:#f4eeff}
+.btn-white {background:white;color:#40328e;border:2px solid white}
+.btn-white:hover {background:#f0e9ff;border-color:#f0e9ff;color:#40328e}
+.btn-hero-outline {color:#fff;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.08)}
+.btn-hero-outline:hover {background:rgba(255,255,255,.2);border-color:white;color:white}
+.hero-footnote {margin-top:34px;color:#eee7ff;font-size:.78rem;font-weight:500}
+.hero-art {width:min(100%,520px);max-height:375px;object-fit:contain;filter:drop-shadow(0 25px 20px rgba(20,14,70,.17))}
+.hero-art-wrap {pointer-events:none}
+.hero-carousel .carousel-indicators {margin:0;bottom:26px;left:7.5%;right:auto;gap:5px}
+.hero-carousel .carousel-indicators [data-bs-target] {height:7px;width:23px;opacity:.4;border:0;border-radius:10px}
+.hero-carousel .carousel-indicators .active {width:42px;opacity:1}
+.hero-carousel .carousel-control-prev,.hero-carousel .carousel-control-next {width:42px;height:42px;top:auto;bottom:20px;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(255,255,255,.12);opacity:.95}
+.hero-carousel .carousel-control-prev:hover,.hero-carousel .carousel-control-next:hover {background:rgba(255,255,255,.28)}
+.hero-carousel .carousel-control-prev {right:77px;left:auto}
+.hero-carousel .carousel-control-next {right:26px}
+.hero-carousel .carousel-control-prev-icon,.hero-carousel .carousel-control-next-icon {width:17px;height:17px}
+.stats-band {max-width:950px}
+.stat-number {font-size:clamp(1.7rem,3.3vw,2.65rem);font-weight:850;letter-spacing:-.045em;color:#24264a}
+.stat-number span {color:var(--purple)}
+.stat-label {font-size:.8rem;color:#778095;font-weight:600}
+.section-pad {padding:105px 0}
+.section-soft {background:#f7f8fc}
+.section-kicker {font-size:.73rem;letter-spacing:.17em;color:var(--purple);font-weight:850}
+.section-heading {font-size:clamp(2.1rem,4vw,3.45rem);line-height:1.15;letter-spacing:-.045em;font-weight:850}
+.section-heading span {color:var(--purple)}
+.section-subtitle {color:var(--muted);line-height:1.8;max-width:600px;margin:12px 0 0}
+.subtle-pill {display:inline-block;border:1px solid #e2dff3;border-radius:50px;padding:12px 16px;font-size:.8rem;color:var(--purple);font-weight:700;background:white}
+.course-card {border:1px solid #edf0f7;border-radius:22px;overflow:hidden;box-shadow:0 7px 28px rgba(31,34,74,.035);transition:transform .2s ease,box-shadow .2s ease}
+.course-card:hover {transform:translateY(-5px);box-shadow:0 17px 36px rgba(31,34,74,.1)}
+.course-thumb {height:210px;object-fit:cover}
+.course-tag {color:var(--purple);font-size:.65rem;font-weight:850;letter-spacing:.12em}
+.course-duration {font-size:.75rem;color:#8390a6}
+.course-card .card-title {font-size:1.37rem;font-weight:800;letter-spacing:-.025em}
+.course-card .card-text {font-size:.9rem;line-height:1.75;margin-bottom:24px}
+.card-action {font-size:.9rem;font-weight:800;color:var(--purple);text-decoration:none}
+.card-action:hover {color:var(--purple-deep)}
+.filter-select {border-radius:12px;border-color:#dfe4ef;padding:13px 16px}
+.table-shell {border:1px solid #e8eaf3;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(26,30,70,.04)}
+.table-shell .table {--bs-table-striped-bg:#f7f8fd;--bs-table-hover-bg:#eff0ff;min-width:720px;font-size:.89rem}
+.table-shell th {background:#23294e;color:#fff;padding:19px 23px;border-bottom:0;white-space:nowrap;font-size:.78rem;font-weight:750;letter-spacing:.02em}
+.table-shell td {padding:20px 23px;border-bottom-color:#eef0f6;color:#4d566b}
+.status-badge {display:inline-block;border-radius:30px;padding:7px 11px;font-size:.73rem;font-weight:750;white-space:nowrap}
+.status-open {color:#18775f;background:#e4f7ef}
+.status-soon {color:#986118;background:#fff3db}
+.table-footer {background:#fff;padding:17px 22px;border-top:1px solid #eceef5;color:#8490a2;font-size:.77rem}
+.contact-section {background:#f4f2ff}
+.contact-feature {display:flex;align-items:start;gap:15px;margin-top:28px}
+.contact-feature-icon {width:42px;height:42px;flex:none;display:grid;place-items:center;background:#e8e1ff;color:var(--purple);border-radius:13px;font-size:1.2rem}
+.contact-feature strong {font-size:.94rem}
+.contact-feature p {font-size:.86rem;color:#707993;margin:4px 0 0}
+.contact-card {background:white;border:1px solid #ebe7fb;padding:36px;border-radius:24px;box-shadow:0 18px 45px rgba(69,49,154,.09)}
+.contact-card h3 {letter-spacing:-.025em;font-weight:800}
+.form-label-pill {font-size:.72rem;color:var(--purple);background:#f1edff;border-radius:20px;padding:8px 12px;font-weight:700}
+.contact-card .form-label {font-weight:700;font-size:.83rem;color:#424b69}
+.contact-card .form-control,.contact-card .form-select {border-color:#e2e5ef;border-radius:12px;padding:13px 15px;font-size:.91rem}
+.contact-card .form-control:focus,.contact-card .form-select:focus {border-color:#9584f5;box-shadow:0 0 0 .2rem rgba(112,86,239,.12)}
+.form-disclaimer {font-size:.73rem;color:#8a91a4;text-align:center;line-height:1.6}
+.site-footer {background:#161b37;color:#c1c8dd}
+.footer-brand {font-weight:850;font-size:1.65rem;color:#fff;letter-spacing:-.06em}
+.footer-brand span {color:#9c8bff}
+.footer-description {max-width:320px;font-size:.88rem;color:#a8b0cd;line-height:1.7}
+.footer-title {font-size:.83rem;font-weight:750;color:#fff;margin-bottom:17px}
+.site-footer a {color:#bbc1db;text-decoration:none;font-size:.86rem}
+.site-footer a:hover {color:#fff}
+.footer-line {border-top:1px solid #303653;font-size:.73rem;color:#8f98b6}
+.footer-line a {font-size:inherit}
+.modal-custom {border:0;border-radius:24px;padding:8px;box-shadow:0 35px 80px rgba(17,24,65,.22)}
+.modal-kicker {color:var(--purple);font-weight:800;letter-spacing:.12em;font-size:.65rem}
+.modal-icon {display:grid;place-items:center;width:53px;height:53px;background:#eeeaff;border-radius:15px;color:var(--purple);font-size:1.6rem}
+.modal-custom .modal-title {font-weight:850;letter-spacing:-.03em}
+.modal-description {font-size:.96rem;line-height:1.75;color:#667087}
+@media(max-width:991.98px) {
+ .navbar-collapse {padding-bottom:15px}
+ .hero-slide {padding:53px 7% 85px}
+ .hero-art {max-height:260px}
+ .hero-slide h1,.hero-slide h2 {font-size:clamp(2rem,6vw,3.7rem)}
+ .section-pad {padding:75px 0}
+}
+@media(max-width:575.98px) {
+ .hero-section {padding-left:12px;padding-right:12px}
+ .hero-carousel {border-radius:23px}
+ .hero-slide {padding:34px 24px 86px;min-height:640px}
+ .hero-slide h1,.hero-slide h2 {font-size:clamp(2.15rem,9.5vw,2.95rem)}
+ .hero-slide p {font-size:.9rem;line-height:1.65}
+ .hero-copy .btn {font-size:.8rem;padding:12px 15px!important}
+ .hero-art {max-height:205px}
+ .hero-footnote {margin-top:19px}
+ .hero-carousel .carousel-indicators {left:24px;bottom:30px}
+ .hero-carousel .carousel-control-prev,.hero-carousel .carousel-control-next {bottom:21px}
+ .hero-carousel .carousel-control-prev {right:69px}
+ .hero-carousel .carousel-control-next {right:20px}
+ .stat-label {font-size:.69rem}
+ .section-pad {padding:64px 0}
+ .contact-card {padding:25px 18px}
+ .form-label-pill {display:none}
+ .table-footer {font-size:.7rem}
+}
+@media(prefers-reduced-motion:reduce) {*,*::before,*::after {scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}

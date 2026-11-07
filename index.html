@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OrbitLab: cursos práticos de tecnologia, design e desenvolvimento. Conheça nossas trilhas e oficinas.">
+  <meta name="theme-color" content="#0c1535">
+  <title>OrbitLab — Aprenda, crie, evolua | Bootstrap 5</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="announcement text-center py-2 px-3">
+    <span class="announcement-dot" aria-hidden="true"></span>
+    Inscrições abertas para as próximas turmas <span aria-hidden="true">•</span> <a href="#agenda">Ver calendário <span aria-hidden="true">↗</span></a>
+  </div>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container py-2">
+        <a class="navbar-brand d-inline-flex align-items-center gap-2" href="#inicio" aria-label="OrbitLab, voltar ao início">
+          <img src="assets/favicon.svg" width="37" height="37" alt="" aria-hidden="true">
+          <span>orbit<span class="brand-mark">lab</span><span class="brand-period">.</span></span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir ou fechar menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPrincipal">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cursos">Trilhas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+          <a href="#contato" class="btn btn-brand rounded-pill px-4 py-2 mt-3 mt-lg-0">Começar agora <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- COMPONENTE 1: CARROSSEL NATIVO DO BOOTSTRAP -->
+    <section id="inicio" class="container hero-section pt-4 pt-lg-5" aria-label="Destaques da OrbitLab">
+      <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="7000" data-bs-pause="hover" aria-roledescription="carrossel" aria-label="Destaques de cursos">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ir para destaque 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Ir para destaque 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Ir para destaque 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero-slide hero-slide--purple">
+              <div class="row align-items-center gy-4 h-100">
+                <div class="col-lg-6 hero-copy">
+                  <span class="eyebrow-light"><span class="sparkle" aria-hidden="true">✦</span> APRENDA FAZENDO</span>
+                  <h1>Seu próximo <span>grande projeto</span> começa aqui.</h1>
+                  <p>Aprenda habilidades digitais com aulas práticas, desafios reais e uma comunidade que cresce junto com você.</p>
+                  <div class="d-flex flex-wrap gap-3 align-items-center mt-4">
+                    <a href="#cursos" class="btn btn-white rounded-pill px-4 py-3 fw-semibold">Explorar trilhas <span aria-hidden="true">↗</span></a>
+                    <button type="button" class="btn btn-hero-outline rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#detalhesModal" data-modal-title="Como funciona a OrbitLab" data-modal-description="Escolha uma trilha, acompanhe aulas práticas e desenvolva projetos para montar seu portfólio. Este site é uma demonstração acadêmica com informações fictícias.">Como funciona?</button>
+                  </div>
+                  <div class="hero-footnote">✧ Prática desde o primeiro dia</div>
+                </div>
+                <div class="col-lg-6 text-center hero-art-wrap"><img class="hero-art img-fluid" src="assets/hero-code.svg" alt="Ilustração de um editor de código e elementos de desenvolvimento" width="610" height="430"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-slide hero-slide--teal">
+              <div class="row align-items-center gy-4 h-100">
+                <div class="col-lg-6 hero-copy">
+                  <span class="eyebrow-light"><span class="sparkle" aria-hidden="true">✦</span> BACKEND & CLOUD</span>
+                  <h2>Construa sistemas <span>que vão além.</span></h2>
+                  <p>Da primeira API à publicação na nuvem: descubra como transformar uma ideia em tecnologia de verdade.</p>
+                  <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#cursos" class="btn btn-white rounded-pill px-4 py-3 fw-semibold">Ver formações <span aria-hidden="true">↗</span></a>
+                    <a href="#agenda" class="btn btn-hero-outline rounded-pill px-4 py-3">Próximas turmas</a>
+                  </div>
+                  <div class="hero-footnote">✧ Projetos para seu portfólio</div>
+                </div>
+                <div class="col-lg-6 text-center hero-art-wrap"><img class="hero-art img-fluid" src="assets/hero-cloud.svg" alt="Ilustração de servidores em nuvem conectados por uma rede" width="610" height="430"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-slide hero-slide--coral">
+              <div class="row align-items-center gy-4 h-100">
+                <div class="col-lg-6 hero-copy">
+                  <span class="eyebrow-light"><span class="sparkle" aria-hidden="true">✦</span> DESIGN DE PRODUTO</span>
+                  <h2>Design pensado <span>para pessoas.</span></h2>
+                  <p>Aprenda a pesquisar, prototipar e criar interfaces que combinam boas experiências com resultados.</p>
+                  <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#cursos" class="btn btn-white rounded-pill px-4 py-3 fw-semibold">Conhecer a trilha <span aria-hidden="true">↗</span></a>
+                    <a href="#contato" class="btn btn-hero-outline rounded-pill px-4 py-3">Fale com a equipe</a>
+                  </div>
+                  <div class="hero-footnote">✧ Criatividade com propósito</div>
+                </div>
+                <div class="col-lg-6 text-center hero-art-wrap"><img class="hero-art img-fluid" src="assets/hero-design.svg" alt="Ilustração de uma interface digital com gráficos e componentes de design" width="610" height="430"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Destaque anterior"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Próximo destaque"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
+      </div>
+    </section>
+
+    <section class="container stats-band py-4 py-lg-5" aria-label="Diferenciais">
+      <div class="row g-3 text-center">
+        <div class="col-4"><div class="stat-number">100<span>%</span></div><div class="stat-label">foco em prática</div></div>
+        <div class="col-4"><div class="stat-number">03</div><div class="stat-label">trilhas de estudo</div></div>
+        <div class="col-4"><div class="stat-number">∞</div><div class="stat-label">possibilidades</div></div>
+      </div>
+    </section>
+
+    <!-- COMPONENTE 2: CARDS EM GRID RESPONSIVO -->
+    <section id="cursos" class="section-pad section-soft">
+      <div class="container">
+        <div class="row align-items-end justify-content-between mb-4 mb-lg-5 gy-3">
+          <div class="col-lg-7"><span class="section-kicker">/ DESENVOLVA NOVAS HABILIDADES</span><h2 class="section-heading mt-2">Escolha sua <span>próxima trilha.</span></h2><p class="section-subtitle">Conteúdo direto ao ponto, com prática e desafios que fazem sentido.</p></div>
+          <div class="col-lg-auto"><span class="subtle-pill">3 áreas para explorar <span aria-hidden="true">↗</span></span></div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="assets/card-frontend.svg" class="card-img-top course-thumb" alt="Representação gráfica de construção de interfaces web" width="600" height="330" loading="lazy">
+              <div class="card-body p-4 d-flex flex-column"><div class="d-flex justify-content-between align-items-center mb-3"><span class="course-tag">DESENVOLVIMENTO</span><span class="course-duration">◷ 8 semanas</span></div><h3 class="card-title h4">Front-end moderno</h3><p class="card-text text-secondary">Crie interfaces responsivas com HTML, CSS, JavaScript e boas práticas de acessibilidade.</p><button type="button" class="btn card-action mt-auto align-self-start p-0" data-bs-toggle="modal" data-bs-target="#detalhesModal" data-modal-title="Front-end moderno" data-modal-description="Uma trilha introdutória de 8 semanas sobre estruturação HTML, layout responsivo, componentes acessíveis e interações em JavaScript.">Ver detalhes <span aria-hidden="true">↗</span></button></div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="assets/card-backend.svg" class="card-img-top course-thumb" alt="Representação gráfica de integrações entre APIs e bancos de dados" width="600" height="330" loading="lazy">
+              <div class="card-body p-4 d-flex flex-column"><div class="d-flex justify-content-between align-items-center mb-3"><span class="course-tag">PROGRAMAÇÃO</span><span class="course-duration">◷ 10 semanas</span></div><h3 class="card-title h4">Backend & APIs</h3><p class="card-text text-secondary">Construa serviços, conecte dados e entenda como aplicações funcionam nos bastidores.</p><button type="button" class="btn card-action mt-auto align-self-start p-0" data-bs-toggle="modal" data-bs-target="#detalhesModal" data-modal-title="Backend & APIs" data-modal-description="Uma trilha de 10 semanas focada em lógica de servidores, APIs REST, persistência de dados e publicação de aplicações.">Ver detalhes <span aria-hidden="true">↗</span></button></div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="assets/card-design.svg" class="card-img-top course-thumb" alt="Representação gráfica de prototipação de telas e design de produto" width="600" height="330" loading="lazy">
+              <div class="card-body p-4 d-flex flex-column"><div class="d-flex justify-content-between align-items-center mb-3"><span class="course-tag">CRIATIVIDADE</span><span class="course-duration">◷ 6 semanas</span></div><h3 class="card-title h4">UX/UI Design</h3><p class="card-text text-secondary">Transforme ideias em experiências intuitivas por meio de pesquisa e prototipação.</p><button type="button" class="btn card-action mt-auto align-self-start p-0" data-bs-toggle="modal" data-bs-target="#detalhesModal" data-modal-title="UX/UI Design" data-modal-description="Uma trilha de 6 semanas com conceitos de experiência do usuário, pesquisa, wireframes, componentes e protótipos.">Ver detalhes <span aria-hidden="true">↗</span></button></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTE 3: TABELA STRIPED RESPONSIVA -->
+    <section id="agenda" class="section-pad">
+      <div class="container">
+        <div class="row justify-content-between align-items-end g-3 mb-4"><div class="col-lg-7"><span class="section-kicker">/ PROGRAME SEUS PRÓXIMOS PASSOS</span><h2 class="section-heading mt-2">Agenda de <span>encontros.</span></h2><p class="section-subtitle">Confira uma programação ilustrativa de oficinas e aulas.</p></div><div class="col-sm-6 col-lg-3"><label for="filtroArea" class="form-label small fw-semibold">Filtrar por área</label><select class="form-select filter-select" id="filtroArea"><option value="todos">Todas as áreas</option><option value="frontend">Front-end</option><option value="backend">Backend</option><option value="design">Design</option></select></div></div>
+        <div class="table-shell"><div class="table-responsive"><table class="table table-striped table-hover align-middle mb-0" id="tabelaAgenda"><caption class="visually-hidden">Programação fictícia de seis encontros organizados por data, tema, formato e situação.</caption><thead><tr><th scope="col">Data</th><th scope="col">Encontro</th><th scope="col">Área</th><th scope="col">Formato</th><th scope="col">Status</th></tr></thead><tbody>
+          <tr data-area="frontend"><td class="fw-semibold text-nowrap">12/11/2026</td><td>Interfaces que se adaptam</td><td>Front-end</td><td>Online</td><td><span class="status-badge status-open">Inscrições abertas</span></td></tr>
+          <tr data-area="backend"><td class="fw-semibold text-nowrap">16/11/2026</td><td>Primeiros passos em APIs</td><td>Backend</td><td>Online</td><td><span class="status-badge status-open">Inscrições abertas</span></td></tr>
+          <tr data-area="design"><td class="fw-semibold text-nowrap">19/11/2026</td><td>Do rascunho ao protótipo</td><td>Design</td><td>Presencial</td><td><span class="status-badge status-soon">Últimas vagas</span></td></tr>
+          <tr data-area="frontend"><td class="fw-semibold text-nowrap">23/11/2026</td><td>JavaScript na prática</td><td>Front-end</td><td>Online</td><td><span class="status-badge status-open">Inscrições abertas</span></td></tr>
+          <tr data-area="backend"><td class="fw-semibold text-nowrap">26/11/2026</td><td>Banco de dados sem mistério</td><td>Backend</td><td>Presencial</td><td><span class="status-badge status-soon">Últimas vagas</span></td></tr>
+          <tr data-area="design"><td class="fw-semibold text-nowrap">30/11/2026</td><td>Componentes e design system</td><td>Design</td><td>Online</td><td><span class="status-badge status-open">Inscrições abertas</span></td></tr>
+        </tbody></table></div><div class="table-footer d-flex justify-content-between gap-2 flex-wrap align-items-center"><span id="agendaCount" role="status" aria-live="polite">Exibindo 6 encontros</span><span>Agenda demonstrativa · sem inscrições reais</span></div></div>
+      </div>
+    </section>
+
+    <!-- COMPONENTE 4: FORMULÁRIO HTML5 COM VALIDAÇÃO -->
+    <section id="contato" class="section-pad contact-section">
+      <div class="container"><div class="row g-5 align-items-center">
+        <div class="col-lg-5"><span class="section-kicker">/ VAMOS CONVERSAR</span><h2 class="section-heading mt-2">Toda ideia começa com um <span>olá.</span></h2><p class="section-subtitle">Quer saber mais sobre alguma trilha? Conte o que você gostaria de aprender e experimente nosso formulário.</p><div class="contact-feature"><span class="contact-feature-icon" aria-hidden="true">✦</span><div><strong>Aprender no seu ritmo</strong><p>Conhecimento que acompanha seus objetivos.</p></div></div><div class="contact-feature"><span class="contact-feature-icon" aria-hidden="true">↗</span><div><strong>Praticar com propósito</strong><p>Do conteúdo para projetos reais.</p></div></div></div>
+        <div class="col-lg-7"><div class="contact-card"><div class="d-flex justify-content-between align-items-center mb-4 gap-2"><h3 class="h4 mb-0">Envie sua mensagem</h3><span class="form-label-pill">✦ Fale com a gente</span></div><form id="formContato" class="needs-validation" novalidate>
+          <div class="row g-3"><div class="col-md-6"><label for="nome" class="form-label">Seu nome <span aria-hidden="true">*</span></label><input id="nome" name="nome" type="text" class="form-control" placeholder="Como podemos chamar você?" autocomplete="name" required minlength="2"><div class="invalid-feedback">Informe seu nome (mínimo de 2 caracteres).</div></div><div class="col-md-6"><label for="email" class="form-label">Seu e-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" class="form-control" placeholder="voce@exemplo.com" autocomplete="email" required><div class="invalid-feedback">Informe um e-mail válido.</div></div><div class="col-12"><label for="interesse" class="form-label">Trilha de interesse <span aria-hidden="true">*</span></label><select id="interesse" name="interesse" class="form-select" required><option value="" selected disabled>Selecione uma trilha</option><option value="Front-end moderno">Front-end moderno</option><option value="Backend & APIs">Backend & APIs</option><option value="UX/UI Design">UX/UI Design</option></select><div class="invalid-feedback">Selecione uma trilha.</div></div><div class="col-12"><label for="mensagem" class="form-label">Sua mensagem <span aria-hidden="true">*</span></label><textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Conte um pouco sobre seu objetivo..." minlength="10" required></textarea><div class="invalid-feedback">Escreva uma mensagem com pelo menos 10 caracteres.</div></div></div>
+          <button class="btn btn-brand rounded-pill w-100 py-3 fw-semibold mt-4" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button><p class="form-disclaimer mb-0 mt-3">Demonstração acadêmica: nenhuma informação é enviada ou armazenada.</p><div id="formFeedback" class="alert alert-success d-none mt-3 mb-0" role="status" aria-live="polite"></div>
+        </form></div></div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container py-5"><div class="row gy-4 justify-content-between"><div class="col-md-5"><a href="#inicio" class="footer-brand text-decoration-none">orbit<span>lab</span>.</a><p class="footer-description mt-3">Um espaço para descobrir, aprender e construir novas possibilidades.</p></div><div class="col-md-5 col-lg-4"><h2 class="footer-title">Explore</h2><div class="d-flex flex-wrap gap-3"><a href="#cursos">Trilhas</a><a href="#agenda">Agenda</a><a href="#contato">Contato</a><a href="tailwind/index.html">Versão Tailwind ↗</a></div></div></div><div class="footer-line mt-4 pt-4 d-flex flex-wrap justify-content-between gap-2"><span>© 2026 OrbitLab. Projeto acadêmico demonstrativo.</span><span>Desenvolvido com Bootstrap 5 · <a href="tailwind/index.html">Comparar Tailwind</a></span></div></div></footer>
+
+  <!-- COMPONENTE 5: MODAL BOOTSTRAP (aberto pelo destaque e pelos cards) -->
+  <div class="modal fade" id="detalhesModal" tabindex="-1" aria-labelledby="detalhesModalTitulo" aria-describedby="detalhesModalDescricao" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content modal-custom"><div class="modal-header border-0 pb-0"><span class="modal-kicker">ORBITLAB / SAIBA MAIS</span><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body pt-3 pb-4"><div class="modal-icon mb-3" aria-hidden="true">✦</div><h2 class="modal-title h3" id="detalhesModalTitulo">Saiba mais</h2><p class="modal-description mt-3" id="detalhesModalDescricao">Descubra nossas trilhas.</p></div><div class="modal-footer border-0 pt-0"><button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Fechar</button><button type="button" id="modalContactAction" class="btn btn-brand rounded-pill px-4" data-bs-dismiss="modal">Tenho interesse <span aria-hidden="true">↗</span></button></div></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
